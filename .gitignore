@@ -1,1 +1,3 @@
-.kitchen\logs\*
+.kitchen/*
+local_cache/*
+Gemfile.lock
