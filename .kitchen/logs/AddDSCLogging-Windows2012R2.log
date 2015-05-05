@@ -1,5 +1,377 @@
-I, [2015-05-04T15:16:04.408601 #8464]  INFO -- AddDSCLogging-Windows2012R2: -----> Destroying <AddDSCLogging-Windows2012R2>...
-I, [2015-05-04T15:16:08.102078 #8464]  INFO -- AddDSCLogging-Windows2012R2: ==> default: Forcing shutdown of VM...
-I, [2015-05-04T15:16:09.626588 #8464]  INFO -- AddDSCLogging-Windows2012R2: ==> default: Destroying VM and associated drives...
-I, [2015-05-04T15:16:09.968690 #8464]  INFO -- AddDSCLogging-Windows2012R2: Vagrant instance <AddDSCLogging-Windows2012R2> destroyed.
-I, [2015-05-04T15:16:09.968690 #8464]  INFO -- AddDSCLogging-Windows2012R2: Finished destroying <AddDSCLogging-Windows2012R2> (0m5.56s).
+D, [2015-05-04T21:26:14.523870 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [Vagrant command] BEGIN (vagrant plugin list)
+D, [2015-05-04T21:26:15.674611 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [Vagrant command] END (0m0.00s)
+D, [2015-05-04T21:26:15.674611 #12200] DEBUG -- AddDSCLogging-Windows2012R2: Winrm Transport requested, loading WinRM::Transport gem (~> 1.0)
+D, [2015-05-04T21:26:16.267556 #12200] DEBUG -- AddDSCLogging-Windows2012R2: WinRM::Transport 1.0.0 library loaded
+I, [2015-05-04T21:26:16.283159 #12200]  INFO -- AddDSCLogging-Windows2012R2: -----> Cleaning up any prior instances of <AddDSCLogging-Windows2012R2>
+I, [2015-05-04T21:26:16.283159 #12200]  INFO -- AddDSCLogging-Windows2012R2: -----> Destroying <AddDSCLogging-Windows2012R2>...
+D, [2015-05-04T21:26:16.283159 #12200] DEBUG -- AddDSCLogging-Windows2012R2: <AddDSCLogging-Windows2012R2> is synchronizing on Kitchen::Driver::Vagrant#destroy
+D, [2015-05-04T21:26:16.283159 #12200] DEBUG -- AddDSCLogging-Windows2012R2: <AddDSCLogging-Windows2012R2> is messaging Kitchen::Driver::Vagrant#destroy
+I, [2015-05-04T21:26:16.283159 #12200]  INFO -- AddDSCLogging-Windows2012R2: Finished destroying <AddDSCLogging-Windows2012R2> (0m0.00s).
+I, [2015-05-04T21:26:16.283159 #12200]  INFO -- AddDSCLogging-Windows2012R2: -----> Testing <AddDSCLogging-Windows2012R2>
+I, [2015-05-04T21:26:16.283159 #12200]  INFO -- AddDSCLogging-Windows2012R2: -----> Creating <AddDSCLogging-Windows2012R2>...
+D, [2015-05-04T21:26:16.283159 #12200] DEBUG -- AddDSCLogging-Windows2012R2: <AddDSCLogging-Windows2012R2> is synchronizing on Kitchen::Driver::Vagrant#create
+D, [2015-05-04T21:26:16.283159 #12200] DEBUG -- AddDSCLogging-Windows2012R2: <AddDSCLogging-Windows2012R2> is messaging Kitchen::Driver::Vagrant#create
+D, [2015-05-04T21:26:16.298763 #12200] DEBUG -- AddDSCLogging-Windows2012R2: Creating Vagrantfile for <AddDSCLogging-Windows2012R2> (C:/test-repo/.kitchen/kitchen-vagrant/kitchen-test-repo-AddDSCLogging-Windows2012R2/Vagrantfile)
+D, [2015-05-04T21:26:16.298763 #12200] DEBUG -- AddDSCLogging-Windows2012R2: ------------
+D, [2015-05-04T21:26:16.298763 #12200] DEBUG -- AddDSCLogging-Windows2012R2: Vagrant.configure("2") do |c|
+D, [2015-05-04T21:26:16.298763 #12200] DEBUG -- AddDSCLogging-Windows2012R2:   c.berkshelf.enabled = false if Vagrant.has_plugin?("vagrant-berkshelf")
+D, [2015-05-04T21:26:16.314367 #12200] DEBUG -- AddDSCLogging-Windows2012R2:   c.vm.box = "Windows2012R2"
+D, [2015-05-04T21:26:16.314367 #12200] DEBUG -- AddDSCLogging-Windows2012R2:   c.vm.communicator = "winrm"
+D, [2015-05-04T21:26:16.314367 #12200] DEBUG -- AddDSCLogging-Windows2012R2:   c.vm.synced_folder ".", "/vagrant", disabled: true
+D, [2015-05-04T21:26:16.314367 #12200] DEBUG -- AddDSCLogging-Windows2012R2:   c.vm.provider :virtualbox do |p|
+D, [2015-05-04T21:26:16.314367 #12200] DEBUG -- AddDSCLogging-Windows2012R2:   end
+D, [2015-05-04T21:26:16.314367 #12200] DEBUG -- AddDSCLogging-Windows2012R2: end
+D, [2015-05-04T21:26:16.314367 #12200] DEBUG -- AddDSCLogging-Windows2012R2: ------------
+D, [2015-05-04T21:26:16.314367 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [Vagrant command] BEGIN (vagrant up --no-provision --provider virtualbox)
+I, [2015-05-04T21:26:18.159520 #12200]  INFO -- AddDSCLogging-Windows2012R2: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2015-05-04T21:26:18.731691 #12200]  INFO -- AddDSCLogging-Windows2012R2: ==> default: Importing base box 'Windows2012R2'...
+I, [2015-05-04T21:27:23.000966 #12200]  INFO -- AddDSCLogging-Windows2012R2: [KProgress: 10%[KProgress: 20%[KProgress: 30%[KProgress: 40%[KProgress: 50%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2015-05-04T21:27:24.303357 #12200]  INFO -- AddDSCLogging-Windows2012R2: ==> default: Setting the name of the VM: kitchen-test-repo-AddDSCLogging-Windows2012R2_default_1430789244259_3075
+I, [2015-05-04T21:27:26.767096 #12200]  INFO -- AddDSCLogging-Windows2012R2: ==> default: Clearing any previously set network interfaces...
+I, [2015-05-04T21:27:26.877129 #12200]  INFO -- AddDSCLogging-Windows2012R2: ==> default: Preparing network interfaces based on configuration...
+I, [2015-05-04T21:27:26.877129 #12200]  INFO -- AddDSCLogging-Windows2012R2:     default: Adapter 1: nat
+I, [2015-05-04T21:27:26.959153 #12200]  INFO -- AddDSCLogging-Windows2012R2: ==> default: Forwarding ports...
+I, [2015-05-04T21:27:27.079189 #12200]  INFO -- AddDSCLogging-Windows2012R2:     default: 5985 => 55985 (adapter 1)
+I, [2015-05-04T21:27:27.079189 #12200]  INFO -- AddDSCLogging-Windows2012R2:     default: 22 => 2222 (adapter 1)
+I, [2015-05-04T21:27:27.331265 #12200]  INFO -- AddDSCLogging-Windows2012R2: ==> default: Booting VM...
+I, [2015-05-04T21:27:31.463676 #12200]  INFO -- AddDSCLogging-Windows2012R2: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2015-05-04T21:27:54.465873 #12200]  INFO -- AddDSCLogging-Windows2012R2: ==> default: Machine booted and ready!
+I, [2015-05-04T21:27:54.465873 #12200]  INFO -- AddDSCLogging-Windows2012R2: ==> default: Checking for guest additions in VM...
+I, [2015-05-04T21:27:54.608930 #12200]  INFO -- AddDSCLogging-Windows2012R2: ==> default: Machine not provisioning because `--no-provision` is specified.
+D, [2015-05-04T21:27:54.648946 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [Vagrant command] END (0m0.00s)
+D, [2015-05-04T21:27:54.649446 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [Vagrant command] BEGIN (vagrant winrm-config)
+D, [2015-05-04T21:27:57.998786 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [Vagrant command] END (0m0.00s)
+D, [2015-05-04T21:27:58.114332 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [WinRM] opening remote shell on plaintext::http://127.0.0.1:55985/wsman<{:disable_sspi=>true, :basic_auth_only=>true, :user=>"vagrant", :pass=>"vagrant"}>
+D, [2015-05-04T21:28:01.923855 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [WinRM] remote shell 7B29F5E8-EBCD-4293-BBF6-C1DC374D77E0 is open on plaintext::http://127.0.0.1:55985/wsman<{:disable_sspi=>true, :basic_auth_only=>true, :user=>"vagrant", :pass=>"vagrant"}>
+D, [2015-05-04T21:28:01.925356 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [WinRM] plaintext::http://127.0.0.1:55985/wsman<{:disable_sspi=>true, :basic_auth_only=>true, :user=>"vagrant", :pass=>"vagrant"}> (Write-Host '[WinRM] Established
+')
+I, [2015-05-04T21:28:02.355528 #12200]  INFO -- AddDSCLogging-Windows2012R2: [WinRM] Established
+I, [2015-05-04T21:28:02.376036 #12200]  INFO -- AddDSCLogging-Windows2012R2: Vagrant instance <AddDSCLogging-Windows2012R2> created.
+I, [2015-05-04T21:28:02.379537 #12200]  INFO -- AddDSCLogging-Windows2012R2: Finished creating <AddDSCLogging-Windows2012R2> (1m46.09s).
+I, [2015-05-04T21:28:02.380538 #12200]  INFO -- AddDSCLogging-Windows2012R2: -----> Converging <AddDSCLogging-Windows2012R2>...
+I, [2015-05-04T21:28:02.387040 #12200]  INFO -- AddDSCLogging-Windows2012R2: Preparing files for transfer
+D, [2015-05-04T21:28:02.387540 #12200] DEBUG -- AddDSCLogging-Windows2012R2: Creating local sandbox in C:/Users/hatchm/AppData/Local/Temp/AddDSCLogging-Windows2012R2-sandbox-20150504-12200-1uegamo
+I, [2015-05-04T21:28:02.388541 #12200]  INFO -- AddDSCLogging-Windows2012R2: Staging DSC Resource Modules for copy to the SUT
+D, [2015-05-04T21:28:02.394043 #12200] DEBUG -- AddDSCLogging-Windows2012R2: Moving C:/test-repo/modules to C:/Users/hatchm/AppData/Local/Temp/AddDSCLogging-Windows2012R2-sandbox-20150504-12200-1uegamo/modules
+I, [2015-05-04T21:28:03.281898 #12200]  INFO -- AddDSCLogging-Windows2012R2: Staging DSC configuration script for copy to the SUT
+D, [2015-05-04T21:28:03.282398 #12200] DEBUG -- AddDSCLogging-Windows2012R2: Moving C:/test-repo/examples/dsc_configuration.ps1 to C:/Users/hatchm/AppData/Local/Temp/AddDSCLogging-Windows2012R2-sandbox-20150504-12200-1uegamo/configuration/dsc_configuration.ps1
+D, [2015-05-04T21:28:03.288401 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [WinRM] reusing existing connection plaintext::http://127.0.0.1:55985/wsman<{:disable_sspi=>true, :basic_auth_only=>true, :user=>"vagrant", :pass=>"vagrant"}>
+D, [2015-05-04T21:28:03.288901 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [WinRM] plaintext::http://127.0.0.1:55985/wsman<{:disable_sspi=>true, :basic_auth_only=>true, :user=>"vagrant", :pass=>"vagrant"}> (
+            configuration SetupLCM
+            {
+              LocalConfigurationManager
+              {
+                AllowModuleOverwrite = [bool]::Parse('false')
+                CertificateID = '$null'
+                ConfigurationMode = 'ApplyAndAutoCorrect'
+                ConfigurationModeFrequencyMins = 30
+                RebootNodeIfNeeded = [bool]::Parse('false')
+                RefreshFrequencyMins = 15
+                RefreshMode = 'PUSH'
+              }
+            }
+            SetupLCM
+            Set-DscLocalConfigurationManager -Path ./SetupLCM
+)
+I, [2015-05-04T21:28:05.344223 #12200]  INFO -- AddDSCLogging-Windows2012R2: 
+I, [2015-05-04T21:28:05.344723 #12200]  INFO -- AddDSCLogging-Windows2012R2: 
+I, [2015-05-04T21:28:05.345723 #12200]  INFO -- AddDSCLogging-Windows2012R2:     Directory: C:\Users\Administrator\SetupLCM
+I, [2015-05-04T21:28:05.346223 #12200]  INFO -- AddDSCLogging-Windows2012R2: 
+I, [2015-05-04T21:28:05.346223 #12200]  INFO -- AddDSCLogging-Windows2012R2: 
+I, [2015-05-04T21:28:05.346223 #12200]  INFO -- AddDSCLogging-Windows2012R2: Mode                LastWriteTime     Length Name                              
+I, [2015-05-04T21:28:05.346724 #12200]  INFO -- AddDSCLogging-Windows2012R2: ----                -------------     ------ ----                              
+I, [2015-05-04T21:28:05.346724 #12200]  INFO -- AddDSCLogging-Windows2012R2: -a---          5/4/2015   6:28 PM       1200 localhost.meta.mof                
+I, [2015-05-04T21:28:05.354727 #12200]  INFO -- AddDSCLogging-Windows2012R2: 
+I, [2015-05-04T21:28:05.356227 #12200]  INFO -- AddDSCLogging-Windows2012R2: 
+W, [2015-05-04T21:28:05.376235 #12200]  WARN -- AddDSCLogging-Windows2012R2: #< CLIXML
+W, [2015-05-04T21:28:05.376736 #12200]  WARN -- AddDSCLogging-Windows2012R2: <Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>LCM</AV><AI>1</AI><S>[WIN-F0UG7RJMPJA] Set</S><PI>-1</PI><PC>100</PC><T>Processing</T><SR>1</SR><SD>Applying Configuration</SD></PR></MS></Obj></Objs>
+I, [2015-05-04T21:28:05.379737 #12200]  INFO -- AddDSCLogging-Windows2012R2: Transferring files to <AddDSCLogging-Windows2012R2>
+D, [2015-05-04T21:28:05.385239 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-1jzjntt.zip] Populating files
+D, [2015-05-04T21:28:05.386239 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-1jzjntt.zip] +++ Adding configuration/dsc_configuration.ps1
+D, [2015-05-04T21:28:05.389741 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-1jzjntt.zip] === All files added.
+D, [2015-05-04T21:28:05.397244 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] Populating files
+D, [2015-05-04T21:28:05.408748 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Build.bat
+D, [2015-05-04T21:28:05.409749 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/CHANGELOG.md
+D, [2015-05-04T21:28:05.413750 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Examples/Calculator/Add-Numbers.Tests.ps1
+D, [2015-05-04T21:28:05.417752 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Examples/Calculator/Add-Numbers.ps1
+D, [2015-05-04T21:28:05.418752 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Examples/Validator/Validator.Tests.ps1
+D, [2015-05-04T21:28:05.422754 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Assertions/Be.Tests.ps1
+D, [2015-05-04T21:28:05.424255 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Assertions/Be.ps1
+D, [2015-05-04T21:28:05.426756 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Assertions/BeGreaterThan.Tests.ps1
+D, [2015-05-04T21:28:05.430757 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Assertions/BeGreaterThan.ps1
+D, [2015-05-04T21:28:05.434259 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Assertions/BeLessThan.Tests.ps1
+D, [2015-05-04T21:28:05.438760 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Assertions/BeLessThan.ps1
+D, [2015-05-04T21:28:05.440261 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Assertions/BeNullOrEmpty.Tests.ps1
+D, [2015-05-04T21:28:05.444263 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Assertions/BeNullOrEmpty.ps1
+D, [2015-05-04T21:28:05.449265 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Assertions/Contain.Tests.ps1
+D, [2015-05-04T21:28:05.452266 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Assertions/Contain.ps1
+D, [2015-05-04T21:28:05.453766 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Assertions/ContainExactly.Tests.ps1
+D, [2015-05-04T21:28:05.457768 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Assertions/ContainExactly.ps1
+D, [2015-05-04T21:28:05.463270 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Assertions/Exist.Tests.ps1
+D, [2015-05-04T21:28:05.464771 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Assertions/Exist.ps1
+D, [2015-05-04T21:28:05.466772 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Assertions/Match.Tests.ps1
+D, [2015-05-04T21:28:05.468272 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Assertions/Match.ps1
+D, [2015-05-04T21:28:05.470273 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Assertions/MatchExactly.Tests.ps1
+D, [2015-05-04T21:28:05.474275 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Assertions/MatchExactly.ps1
+D, [2015-05-04T21:28:05.475275 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Assertions/PesterThrow.Tests.ps1
+D, [2015-05-04T21:28:05.479777 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Assertions/PesterThrow.ps1
+D, [2015-05-04T21:28:05.481277 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Assertions/Should.Tests.ps1
+D, [2015-05-04T21:28:05.483778 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Assertions/Should.ps1
+D, [2015-05-04T21:28:05.485279 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Assertions/Test-Assertion.ps1
+D, [2015-05-04T21:28:05.488780 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Context.Tests.ps1
+D, [2015-05-04T21:28:05.490281 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Context.ps1
+D, [2015-05-04T21:28:05.492782 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Coverage.Tests.ps1
+D, [2015-05-04T21:28:05.494783 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Coverage.ps1
+D, [2015-05-04T21:28:05.498284 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Describe.Tests.ps1
+D, [2015-05-04T21:28:05.499785 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Describe.ps1
+D, [2015-05-04T21:28:05.501786 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/In.Tests.ps1
+D, [2015-05-04T21:28:05.503286 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/In.ps1
+D, [2015-05-04T21:28:05.505287 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/InModuleScope.Tests.ps1
+D, [2015-05-04T21:28:05.506788 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/InModuleScope.ps1
+D, [2015-05-04T21:28:05.508788 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/It.Tests.ps1
+D, [2015-05-04T21:28:05.510789 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/It.ps1
+D, [2015-05-04T21:28:05.513290 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Mock.Tests.ps1
+D, [2015-05-04T21:28:05.518292 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/Mock.ps1
+D, [2015-05-04T21:28:05.522794 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/New-Fixture.Tests.ps1
+D, [2015-05-04T21:28:05.524795 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/New-Fixture.ps1
+D, [2015-05-04T21:28:05.526796 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/PesterState.Tests.ps1
+D, [2015-05-04T21:28:05.529297 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/PesterState.ps1
+D, [2015-05-04T21:28:05.531798 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/SetupTeardown.Tests.ps1
+D, [2015-05-04T21:28:05.533798 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/SetupTeardown.ps1
+D, [2015-05-04T21:28:05.535799 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/TestDrive.Tests.ps1
+D, [2015-05-04T21:28:05.537800 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/TestDrive.ps1
+D, [2015-05-04T21:28:05.539801 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/TestResults.Tests.ps1
+D, [2015-05-04T21:28:05.542802 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/TestResults.ps1
+D, [2015-05-04T21:28:05.544803 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Functions/TestsRunningInCleanRunspace.Tests.ps1
+D, [2015-05-04T21:28:05.548804 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/LICENSE
+D, [2015-05-04T21:28:05.550305 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Pester.Tests.ps1
+D, [2015-05-04T21:28:05.551806 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Pester.nuspec
+D, [2015-05-04T21:28:05.553806 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Pester.psd1
+D, [2015-05-04T21:28:05.557808 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Pester.psm1
+D, [2015-05-04T21:28:05.565811 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/README.md
+D, [2015-05-04T21:28:05.567312 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Snippets/Context.snippets.ps1xml
+D, [2015-05-04T21:28:05.569313 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Snippets/Describe.snippets.ps1xml
+D, [2015-05-04T21:28:05.570813 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Snippets/It.snippets.ps1xml
+D, [2015-05-04T21:28:05.572314 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Snippets/ShouldBe.snippets.ps1xml
+D, [2015-05-04T21:28:05.574315 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Snippets/ShouldBeGreaterThan.snippets.ps1xml
+D, [2015-05-04T21:28:05.577816 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Snippets/ShouldBeLessThan.snippets.ps1xml
+D, [2015-05-04T21:28:05.581818 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Snippets/ShouldBeNullOrEmpty.snippets.ps1xml
+D, [2015-05-04T21:28:05.585319 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Snippets/ShouldContain.snippets.ps1xml
+D, [2015-05-04T21:28:05.588820 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Snippets/ShouldExist.snippets.ps1xml
+D, [2015-05-04T21:28:05.590321 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Snippets/ShouldMatch.snippets.ps1xml
+D, [2015-05-04T21:28:05.592322 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Snippets/ShouldNotBe.snippets.ps1xml
+D, [2015-05-04T21:28:05.593822 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Snippets/ShouldNotBeNullOrEmpty.snippets.ps1xml
+D, [2015-05-04T21:28:05.598324 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Snippets/ShouldNotContain.snippets.ps1xml
+D, [2015-05-04T21:28:05.602326 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Snippets/ShouldNotExist.snippets.ps1xml
+D, [2015-05-04T21:28:05.605827 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Snippets/ShouldNotMatch.snippets.ps1xml
+D, [2015-05-04T21:28:05.608828 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Snippets/ShouldNotThrow.snippets.ps1xml
+D, [2015-05-04T21:28:05.612330 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/Snippets/ShouldThrow.snippets.ps1xml
+D, [2015-05-04T21:28:05.614831 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/bin/pester.bat
+D, [2015-05-04T21:28:05.616331 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/build.psake.ps1
+D, [2015-05-04T21:28:05.618332 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/chocolateyInstall.ps1
+D, [2015-05-04T21:28:05.620333 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/en-US/about_BeforeEach_AfterEach.help.txt
+D, [2015-05-04T21:28:05.623834 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/en-US/about_Mocking.help.txt
+D, [2015-05-04T21:28:05.625335 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/en-US/about_Pester.help.txt
+D, [2015-05-04T21:28:05.627336 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/en-US/about_TestDrive.help.txt
+D, [2015-05-04T21:28:05.629337 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/en-US/about_should.help.txt
+D, [2015-05-04T21:28:05.631838 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/nunit_schema_2.5.xsd
+D, [2015-05-04T21:28:05.633838 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/vendor/packages.config
+D, [2015-05-04T21:28:05.635839 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/vendor/tools/NuGet.exe
+D, [2015-05-04T21:28:05.848424 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/vendor/tools/OneGet/Etc/PackageProviderFunctions.psm1
+D, [2015-05-04T21:28:05.853426 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/vendor/tools/OneGet/Microsoft.OneGet.MetaProvider.PowerShell.dll
+D, [2015-05-04T21:28:05.862930 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/vendor/tools/OneGet/Microsoft.OneGet.PackageProvider.Bootstrap.dll
+D, [2015-05-04T21:28:05.868932 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/vendor/tools/OneGet/Microsoft.OneGet.ServicesProvider.Common.dll
+D, [2015-05-04T21:28:05.874935 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/vendor/tools/OneGet/Microsoft.OneGet.Utility.PowerShell.dll
+D, [2015-05-04T21:28:05.881938 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/vendor/tools/OneGet/Microsoft.OneGet.Utility.dll
+D, [2015-05-04T21:28:05.963470 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/vendor/tools/OneGet/Microsoft.OneGet.dll
+D, [2015-05-04T21:28:05.977976 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/vendor/tools/OneGet/Microsoft.OneGet.exe
+D, [2015-05-04T21:28:05.997984 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/vendor/tools/OneGet/Microsoft.PowerShell.OneGet.dll
+D, [2015-05-04T21:28:06.013490 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/vendor/tools/OneGet/OneGet.format.ps1xml
+D, [2015-05-04T21:28:06.019493 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/vendor/tools/OneGet/OneGet.psd1
+D, [2015-05-04T21:28:06.038000 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/vendor/tools/OneGet/OneGet_4ae9fd46-338a-459c-8186-07f910774cb8_HelpInfo.xml
+D, [2015-05-04T21:28:06.042002 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/vendor/tools/PowerShellGet/PSGet.Format.ps1xml
+D, [2015-05-04T21:28:06.046003 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/vendor/tools/PowerShellGet/PSGet.Resource.psd1
+D, [2015-05-04T21:28:06.051005 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/vendor/tools/PowerShellGet/PSGet.psm1
+D, [2015-05-04T21:28:06.068012 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/vendor/tools/PowerShellGet/PowerShellGet.psd1
+D, [2015-05-04T21:28:06.072014 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/vendor/tools/PowerShellGet/PowerShellGet_1d73a601-4a6c-43c5-ba3f-619b18bbb404_HelpInfo.xml
+D, [2015-05-04T21:28:06.076015 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/vendor/tools/PowerShellGet/en-US/PSGet.Resource.psd1
+D, [2015-05-04T21:28:06.081017 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/Pester/vendor/tools/PowerShellGet/en-US/PSGet.psm1-help.xml
+D, [2015-05-04T21:28:06.087520 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/xWinEventLog/DSCResources/MSFT_xWinEventLog/MSFT_xWinEventLog.psm1
+D, [2015-05-04T21:28:06.091521 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/xWinEventLog/DSCResources/MSFT_xWinEventLog/MSFT_xWinEventLog.schema.mof
+D, [2015-05-04T21:28:06.096023 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/xWinEventLog/Examples/Demo1.ps1
+D, [2015-05-04T21:28:06.097024 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/xWinEventLog/LICENSE
+D, [2015-05-04T21:28:06.100525 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/xWinEventLog/README.md
+D, [2015-05-04T21:28:06.102026 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/xWinEventLog/WinEvent.Tests.ps1
+D, [2015-05-04T21:28:06.104527 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/xWinEventLog/appveyor.yml
+D, [2015-05-04T21:28:06.106527 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/xWinEventLog/xWinEventLog.psd1
+D, [2015-05-04T21:28:06.109028 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] +++ Adding modules/xWinEventLog/xWinEventLog.psm1
+D, [2015-05-04T21:28:06.111029 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip] === All files added.
+D, [2015-05-04T21:28:06.124535 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] Running check_files.ps1
+D, [2015-05-04T21:28:06.126035 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] @{
+D, [2015-05-04T21:28:06.126535 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter]   "$env:TEMP\tmpzip-ae8fbac37d9200d87c1a4c7d06b237cf.zip" = "ae8fbac37d9200d87c1a4c7d06b237cf"
+D, [2015-05-04T21:28:06.129537 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter]   "$env:TEMP\tmpzip-8958ed4293b009a353b5b86874605476.zip" = "8958ed4293b009a353b5b86874605476"
+D, [2015-05-04T21:28:06.130537 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] }
+D, [2015-05-04T21:28:06.785299 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] Uploading C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-1jzjntt.zip to encoded tmpfile $env:TEMP\b64-ae8fbac37d9200d87c1a4c7d06b237cf.txt
+D, [2015-05-04T21:28:06.894342 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] Finished uploading C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-1jzjntt.zip to encoded tmpfile $env:TEMP\b64-ae8fbac37d9200d87c1a4c7d06b237cf.txt (0.544 KB over 1 chunks) in (0m0.11s)
+D, [2015-05-04T21:28:06.895343 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] Uploading C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip to encoded tmpfile $env:TEMP\b64-8958ed4293b009a353b5b86874605476.txt
+D, [2015-05-04T21:28:08.371433 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] Wrote chunk 25 for $env:TEMP\b64-8958ed4293b009a353b5b86874605476.txt
+D, [2015-05-04T21:28:09.844022 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] Wrote chunk 50 for $env:TEMP\b64-8958ed4293b009a353b5b86874605476.txt
+D, [2015-05-04T21:28:11.211068 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] Wrote chunk 75 for $env:TEMP\b64-8958ed4293b009a353b5b86874605476.txt
+D, [2015-05-04T21:28:12.542601 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] Wrote chunk 100 for $env:TEMP\b64-8958ed4293b009a353b5b86874605476.txt
+D, [2015-05-04T21:28:13.888139 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] Wrote chunk 125 for $env:TEMP\b64-8958ed4293b009a353b5b86874605476.txt
+D, [2015-05-04T21:28:15.189159 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] Wrote chunk 150 for $env:TEMP\b64-8958ed4293b009a353b5b86874605476.txt
+D, [2015-05-04T21:28:16.136038 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] Finished uploading C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip to encoded tmpfile $env:TEMP\b64-8958ed4293b009a353b5b86874605476.txt (1330.812 KB over 167 chunks) in (0m9.24s)
+D, [2015-05-04T21:28:16.137038 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] Running decode_files.ps1
+D, [2015-05-04T21:28:16.140039 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] @{
+D, [2015-05-04T21:28:16.140539 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter]   "$env:TEMP\b64-ae8fbac37d9200d87c1a4c7d06b237cf.txt" = @{
+D, [2015-05-04T21:28:16.144041 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter]     "dst" = "$env:TEMP\kitchen"
+D, [2015-05-04T21:28:16.144541 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter]     "tmpzip" = "$env:TEMP\tmpzip-ae8fbac37d9200d87c1a4c7d06b237cf.zip"
+D, [2015-05-04T21:28:16.148042 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter]   }
+D, [2015-05-04T21:28:16.149543 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter]   "$env:TEMP\b64-8958ed4293b009a353b5b86874605476.txt" = @{
+D, [2015-05-04T21:28:16.152044 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter]     "dst" = "$env:TEMP\kitchen"
+D, [2015-05-04T21:28:16.153044 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter]     "tmpzip" = "$env:TEMP\tmpzip-8958ed4293b009a353b5b86874605476.zip"
+D, [2015-05-04T21:28:16.156546 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter]   }
+D, [2015-05-04T21:28:16.157546 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] }
+D, [2015-05-04T21:28:17.266490 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] Cleaned up src_zip C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-1jzjntt.zip
+D, [2015-05-04T21:28:17.266990 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] Cleaned up src_zip C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-16o4au5.zip
+D, [2015-05-04T21:28:17.267490 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] Uploaded 2 items in (0m11.88s)
+D, [2015-05-04T21:28:17.269991 #12200] DEBUG -- AddDSCLogging-Windows2012R2: Transfer complete
+I, [2015-05-04T21:28:17.270491 #12200]  INFO -- AddDSCLogging-Windows2012R2: Moving DSC Resources onto PSModulePath
+I, [2015-05-04T21:28:17.273492 #12200]  INFO -- AddDSCLogging-Windows2012R2: Generating the MOF script for the configuration AddDSCLogging
+D, [2015-05-04T21:28:17.274493 #12200] DEBUG -- AddDSCLogging-Windows2012R2: Shelling out:           dir ( join-path $env:TEMP\kitchen 'modules/*') -directory |
+            copy-item -destination $env:programfiles/windowspowershell/modules/ -recurse -force
+
+          if (-not (test-path 'c:/configurations'))
+          {
+            mkdir 'c:/configurations' | out-null
+          }
+          $ConfigurationScriptPath = Join-path $env:TEMP\kitchen configuration/dsc_configuration.ps1
+          if (-not (test-path $ConfigurationScriptPath))
+          {
+            throw "Failed to find $ConfigurationScriptPath"
+          }
+          invoke-expression (get-content $ConfigurationScriptPath -raw) 
+          if (-not (get-command AddDSCLogging))
+          {
+            throw "Failed to create a configuration command AddDSCLogging"
+          }
+          $null = AddDSCLogging -outputpath c:/configurations 
+
+D, [2015-05-04T21:28:17.277994 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [WinRM] plaintext::http://127.0.0.1:55985/wsman<{:disable_sspi=>true, :basic_auth_only=>true, :user=>"vagrant", :pass=>"vagrant"}> (
+          dir ( join-path $env:TEMP\kitchen 'modules/*') -directory |
+            copy-item -destination $env:programfiles/windowspowershell/modules/ -recurse -force
+
+          if (-not (test-path 'c:/configurations'))
+          {
+            mkdir 'c:/configurations' | out-null
+          }
+          $ConfigurationScriptPath = Join-path $env:TEMP\kitchen configuration/dsc_configuration.ps1
+          if (-not (test-path $ConfigurationScriptPath))
+          {
+            throw "Failed to find $ConfigurationScriptPath"
+          }
+          invoke-expression (get-content $ConfigurationScriptPath -raw) 
+          if (-not (get-command AddDSCLogging))
+          {
+            throw "Failed to create a configuration command AddDSCLogging"
+          }
+          $null = AddDSCLogging -outputpath c:/configurations 
+)
+I, [2015-05-04T21:28:18.944160 #12200]  INFO -- AddDSCLogging-Windows2012R2: Running the configuration AddDSCLogging
+D, [2015-05-04T21:28:18.944661 #12200] DEBUG -- AddDSCLogging-Windows2012R2: Shelling out:           $job = start-dscconfiguration -Path c:/configurations/ -force
+          $job | wait-job
+          $job.childjobs[0].verbose
+
+D, [2015-05-04T21:28:18.947662 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [WinRM] plaintext::http://127.0.0.1:55985/wsman<{:disable_sspi=>true, :basic_auth_only=>true, :user=>"vagrant", :pass=>"vagrant"}> (
+          $job = start-dscconfiguration -Path c:/configurations/ -force
+          $job | wait-job
+          $job.childjobs[0].verbose
+)
+I, [2015-05-04T21:28:24.648941 #12200]  INFO -- AddDSCLogging-Windows2012R2: 
+I, [2015-05-04T21:28:24.649442 #12200]  INFO -- AddDSCLogging-Windows2012R2: Id     Name            PSJobTypeName   State         HasMoreData     Location  
+I, [2015-05-04T21:28:24.649942 #12200]  INFO -- AddDSCLogging-Windows2012R2: --     ----            -------------   -----         -----------     --------  
+I, [2015-05-04T21:28:24.649942 #12200]  INFO -- AddDSCLogging-Windows2012R2: 1      Job1            Configuratio... Failed        True            localhost 
+I, [2015-05-04T21:28:24.654944 #12200]  INFO -- AddDSCLogging-Windows2012R2: Perform operation 'Invoke CimMethod' with following parameters, ''methodName' 
+I, [2015-05-04T21:28:24.655944 #12200]  INFO -- AddDSCLogging-Windows2012R2: = SendConfigurationApply,'className' = 
+I, [2015-05-04T21:28:24.656444 #12200]  INFO -- AddDSCLogging-Windows2012R2: MSFT_DSCLocalConfigurationManager,'namespaceName' = 
+I, [2015-05-04T21:28:24.656444 #12200]  INFO -- AddDSCLogging-Windows2012R2: root/Microsoft/Windows/DesiredStateConfiguration'.
+I, [2015-05-04T21:28:24.656444 #12200]  INFO -- AddDSCLogging-Windows2012R2: An LCM method call arrived from computer WIN-F0UG7RJMPJA with user sid 
+I, [2015-05-04T21:28:24.656945 #12200]  INFO -- AddDSCLogging-Windows2012R2: S-1-5-21-1351542086-3498749049-2604355835-500.
+I, [2015-05-04T21:28:24.656945 #12200]  INFO -- AddDSCLogging-Windows2012R2: [WIN-F0UG7RJMPJA]: LCM:  [ Start  Set      ]
+I, [2015-05-04T21:28:24.656945 #12200]  INFO -- AddDSCLogging-Windows2012R2: [WIN-F0UG7RJMPJA]: LCM:  [ Start  Resource ]  [[xWinEventLog]DSCLogs]
+I, [2015-05-04T21:28:24.656945 #12200]  INFO -- AddDSCLogging-Windows2012R2: [WIN-F0UG7RJMPJA]: LCM:  [ Start  Test     ]  [[xWinEventLog]DSCLogs]
+I, [2015-05-04T21:28:24.656945 #12200]  INFO -- AddDSCLogging-Windows2012R2: [WIN-F0UG7RJMPJA]: LCM:  [ End    Test     ]  [[xWinEventLog]DSCLogs]  in 
+I, [2015-05-04T21:28:24.656945 #12200]  INFO -- AddDSCLogging-Windows2012R2: 4.3600 seconds.
+I, [2015-05-04T21:28:24.656945 #12200]  INFO -- AddDSCLogging-Windows2012R2: [WIN-F0UG7RJMPJA]: LCM:  [ Start  Set      ]  [[xWinEventLog]DSCLogs]
+I, [2015-05-04T21:28:24.657445 #12200]  INFO -- AddDSCLogging-Windows2012R2: [WIN-F0UG7RJMPJA]: LCM:  [ End    Set      ]  [[xWinEventLog]DSCLogs]  in 
+I, [2015-05-04T21:28:24.657445 #12200]  INFO -- AddDSCLogging-Windows2012R2: 0.2640 seconds.
+I, [2015-05-04T21:28:24.657445 #12200]  INFO -- AddDSCLogging-Windows2012R2: [WIN-F0UG7RJMPJA]: LCM:  [ End    Set      ]
+I, [2015-05-04T21:28:24.657445 #12200]  INFO -- AddDSCLogging-Windows2012R2: Operation 'Invoke CimMethod' complete.
+I, [2015-05-04T21:28:24.657445 #12200]  INFO -- AddDSCLogging-Windows2012R2: 
+I, [2015-05-04T21:28:24.657445 #12200]  INFO -- AddDSCLogging-Windows2012R2: 
+W, [2015-05-04T21:28:24.712967 #12200]  WARN -- AddDSCLogging-Windows2012R2: #< CLIXML
+W, [2015-05-04T21:28:24.713467 #12200]  WARN -- AddDSCLogging-Windows2012R2: <Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Preparing modules for first use.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj></Objs>
+D, [2015-05-04T21:28:24.715968 #12200] DEBUG -- AddDSCLogging-Windows2012R2: Cleaning up local sandbox in C:/Users/hatchm/AppData/Local/Temp/AddDSCLogging-Windows2012R2-sandbox-20150504-12200-1uegamo
+I, [2015-05-04T21:28:24.831014 #12200]  INFO -- AddDSCLogging-Windows2012R2: Finished converging <AddDSCLogging-Windows2012R2> (0m22.44s).
+I, [2015-05-04T21:28:24.832015 #12200]  INFO -- AddDSCLogging-Windows2012R2: -----> Setting up <AddDSCLogging-Windows2012R2>...
+I, [2015-05-04T21:28:24.836516 #12200]  INFO -- AddDSCLogging-Windows2012R2: Finished setting up <AddDSCLogging-Windows2012R2> (0m0.00s).
+I, [2015-05-04T21:28:24.837017 #12200]  INFO -- AddDSCLogging-Windows2012R2: -----> Verifying <AddDSCLogging-Windows2012R2>...
+I, [2015-05-04T21:28:24.841518 #12200]  INFO -- AddDSCLogging-Windows2012R2: Preparing files for transfer
+D, [2015-05-04T21:28:24.842019 #12200] DEBUG -- AddDSCLogging-Windows2012R2: Creating local sandbox in C:/Users/hatchm/AppData/Local/Temp/AddDSCLogging-Windows2012R2-sandbox-20150504-12200-4srfll
+D, [2015-05-04T21:28:24.848521 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [WinRM] reusing existing connection plaintext::http://127.0.0.1:55985/wsman<{:disable_sspi=>true, :basic_auth_only=>true, :user=>"vagrant", :pass=>"vagrant"}>
+D, [2015-05-04T21:28:24.850022 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [WinRM] plaintext::http://127.0.0.1:55985/wsman<{:disable_sspi=>true, :basic_auth_only=>true, :user=>"vagrant", :pass=>"vagrant"}> (
+if (-not (get-module -list pester)) {
+  if (-not (get-module PsGet)){
+    iex (new-object Net.WebClient).DownloadString('http://bit.ly/GetPsGet')
+  }
+  Import-Module PsGet
+  Install-Module Pester
+}
+)
+I, [2015-05-04T21:28:25.107125 #12200]  INFO -- AddDSCLogging-Windows2012R2: Transferring files to <AddDSCLogging-Windows2012R2>
+D, [2015-05-04T21:28:25.109626 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-1t5rov4.zip] Populating files
+D, [2015-05-04T21:28:25.110626 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-1t5rov4.zip] +++ Adding suites/pester/AddDSCLogging.Tests.ps1
+D, [2015-05-04T21:28:25.113627 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [TmpZip::C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-1t5rov4.zip] === All files added.
+D, [2015-05-04T21:28:25.119129 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] Running check_files.ps1
+D, [2015-05-04T21:28:25.119630 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] @{
+D, [2015-05-04T21:28:25.120130 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter]   "$env:TEMP\tmpzip-91eb46279b52451d37b6b588b277afb9.zip" = "91eb46279b52451d37b6b588b277afb9"
+D, [2015-05-04T21:28:25.124131 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] }
+D, [2015-05-04T21:28:25.706364 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] Uploading C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-1t5rov4.zip to encoded tmpfile $env:TEMP\b64-91eb46279b52451d37b6b588b277afb9.txt
+D, [2015-05-04T21:28:25.817909 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] Finished uploading C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-1t5rov4.zip to encoded tmpfile $env:TEMP\b64-91eb46279b52451d37b6b588b277afb9.txt (0.528 KB over 1 chunks) in (0m0.11s)
+D, [2015-05-04T21:28:25.818909 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] Running decode_files.ps1
+D, [2015-05-04T21:28:25.821910 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] @{
+D, [2015-05-04T21:28:25.822911 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter]   "$env:TEMP\b64-91eb46279b52451d37b6b588b277afb9.txt" = @{
+D, [2015-05-04T21:28:25.824912 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter]     "dst" = "$env:TEMP\verifier"
+D, [2015-05-04T21:28:25.825912 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter]     "tmpzip" = "$env:TEMP\tmpzip-91eb46279b52451d37b6b588b277afb9.zip"
+D, [2015-05-04T21:28:25.827913 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter]   }
+D, [2015-05-04T21:28:25.829413 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] }
+D, [2015-05-04T21:28:26.503683 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] Cleaned up src_zip C:/Users/hatchm/AppData/Local/Temp/tmpzip-20150504-12200-1t5rov4.zip
+D, [2015-05-04T21:28:26.504183 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [FileTransporter] Uploaded 1 items in (0m1.40s)
+D, [2015-05-04T21:28:26.505184 #12200] DEBUG -- AddDSCLogging-Windows2012R2: Transfer complete
+D, [2015-05-04T21:28:26.508185 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [WinRM] plaintext::http://127.0.0.1:55985/wsman<{:disable_sspi=>true, :basic_auth_only=>true, :user=>"vagrant", :pass=>"vagrant"}> (
+cd $env:TEMP\verifier/suites/pester
+invoke-pester
+)
+I, [2015-05-04T21:28:28.121830 #12200]  INFO -- AddDSCLogging-Windows2012R2: Executing all tests in 'C:\Users\Administrator\AppData\Local\Temp\verifier\suites\pester'Describing Windows Event Log Microsoft-Windows-DSC/Analytic
+I, [2015-05-04T21:28:28.361926 #12200]  INFO -- AddDSCLogging-Windows2012R2:  [-] Should be Enabled 711ms
+I, [2015-05-04T21:28:28.362426 #12200]  INFO -- AddDSCLogging-Windows2012R2:    Expected: {True}
+I, [2015-05-04T21:28:28.362426 #12200]  INFO -- AddDSCLogging-Windows2012R2:    But was:  {False}
+I, [2015-05-04T21:28:28.362426 #12200]  INFO -- AddDSCLogging-Windows2012R2:    at line: 6 in C:\Users\Administrator\AppData\Local\Temp\verifier\suites\pester\AddDSCLogging.Tests.ps1
+I, [2015-05-04T21:28:28.368429 #12200]  INFO -- AddDSCLogging-Windows2012R2:  [+] Should have log size of 5111800 131ms [+] Should have log mode set to AutoBackUp 16ms
+I, [2015-05-04T21:28:28.370429 #12200]  INFO -- AddDSCLogging-Windows2012R2: Tests completed in 859ms
+I, [2015-05-04T21:28:28.370930 #12200]  INFO -- AddDSCLogging-Windows2012R2: Passed: 2 Failed: 1 Skipped: 0 Pending: 0
+D, [2015-05-04T21:28:28.392938 #12200] DEBUG -- AddDSCLogging-Windows2012R2: Cleaning up local sandbox in C:/Users/hatchm/AppData/Local/Temp/AddDSCLogging-Windows2012R2-sandbox-20150504-12200-4srfll
+I, [2015-05-04T21:28:28.398441 #12200]  INFO -- AddDSCLogging-Windows2012R2: Finished verifying <AddDSCLogging-Windows2012R2> (0m3.56s).
+I, [2015-05-04T21:28:28.399941 #12200]  INFO -- AddDSCLogging-Windows2012R2: -----> Destroying <AddDSCLogging-Windows2012R2>...
+D, [2015-05-04T21:28:28.401942 #12200] DEBUG -- AddDSCLogging-Windows2012R2: <AddDSCLogging-Windows2012R2> is synchronizing on Kitchen::Driver::Vagrant#destroy
+D, [2015-05-04T21:28:28.402442 #12200] DEBUG -- AddDSCLogging-Windows2012R2: <AddDSCLogging-Windows2012R2> is messaging Kitchen::Driver::Vagrant#destroy
+D, [2015-05-04T21:28:28.404443 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [WinRM] reusing existing connection plaintext::http://127.0.0.1:55985/wsman<{:disable_sspi=>true, :basic_auth_only=>true, :user=>"vagrant", :pass=>"vagrant"}>
+D, [2015-05-04T21:28:28.406944 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [WinRM] closing remote shell 7B29F5E8-EBCD-4293-BBF6-C1DC374D77E0 on plaintext::http://127.0.0.1:55985/wsman<{:disable_sspi=>true, :basic_auth_only=>true, :user=>"vagrant", :pass=>"vagrant"}>
+D, [2015-05-04T21:28:28.452462 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [WinRM] remote shell 7B29F5E8-EBCD-4293-BBF6-C1DC374D77E0 closed
+D, [2015-05-04T21:28:28.453463 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [Vagrant command] BEGIN (vagrant destroy -f)
+I, [2015-05-04T21:28:32.531593 #12200]  INFO -- AddDSCLogging-Windows2012R2: ==> default: Forcing shutdown of VM...
+I, [2015-05-04T21:28:33.979072 #12200]  INFO -- AddDSCLogging-Windows2012R2: ==> default: Destroying VM and associated drives...
+D, [2015-05-04T21:28:34.336977 #12200] DEBUG -- AddDSCLogging-Windows2012R2: [Vagrant command] END (0m0.00s)
+I, [2015-05-04T21:28:34.336977 #12200]  INFO -- AddDSCLogging-Windows2012R2: Vagrant instance <AddDSCLogging-Windows2012R2> destroyed.
+I, [2015-05-04T21:28:34.336977 #12200]  INFO -- AddDSCLogging-Windows2012R2: Finished destroying <AddDSCLogging-Windows2012R2> (0m5.94s).
+I, [2015-05-04T21:28:34.336977 #12200]  INFO -- AddDSCLogging-Windows2012R2: Finished testing <AddDSCLogging-Windows2012R2> (2m18.05s).

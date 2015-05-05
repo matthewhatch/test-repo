@@ -6,8 +6,10 @@ configuration AddDSCLogging{
 
     Node $NodeName{
         xWinEventLog DSCLogs{
-            LogName     = "Microsoft-Windows-DSC/Analytic"
-            IsEnabled   = $true
+            LogName             = "Microsoft-Windows-DSC/Analytic"
+            IsEnabled           = $true
+            MaximumSizeInBytes  = '5111800'
+            LogMode             = 'AutoBackup'
         }    
     }
 }

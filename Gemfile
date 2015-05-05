@@ -8,5 +8,6 @@ group :development do
   gem 'winrm-transport' 
   gem 'pry'
   gem 'kitchen-vagrant'
-  gem 'vagrant-winrm', git: 'https://github.com/criteo/vagrant-winrm.git'  
+  gem 'vagrant-winrm', git: 'https://github.com/criteo/vagrant-winrm.git'
+  gem 'kitchen-vagrant_winrm' 
 end 
