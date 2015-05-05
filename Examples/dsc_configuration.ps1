@@ -8,8 +8,12 @@ configuration AddDSCLogging{
         xWinEventLog DSCLogs{
             LogName             = "Microsoft-Windows-DSC/Analytic"
             IsEnabled           = $true
-            MaximumSizeInBytes  = '5111800'
-            LogMode             = 'AutoBackup'
+        }
+
+        xWinEventLog DSCOperational{
+            LogName = 'Microsoft-Windows-DSC/Operational'
+            IsEnabled = $true
+            LogMode = 'AutoBackup'
         }    
     }
 }
